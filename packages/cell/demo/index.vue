@@ -1,5 +1,14 @@
 <template>
   <demo-section>
+  <form action="/">
+  <van-search
+    v-model="value"
+    placeholder="请输入搜索关键词"
+    show-action
+    @search="onSearch"
+    @cancel="onCancel"
+  />
+</form>
     <demo-block :title="$t('basicUsage')">
       <van-cell-group>
         <van-cell
